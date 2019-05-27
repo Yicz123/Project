@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_and"
+        android:contentDescription="@string/background_mian"
+        android:scaleType="matrix"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_username"
+        style="@style/BlackText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="127dp"
+        android:text="@string/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/text_realname"
+        style="@style/BlackText"
+        android:layout_below="@id/text_username"
+        android:layout_marginStart="20dp"
+        android:text="@string/realname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_username"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:id="@+id/text_myclasses"
+        android:layout_width="wrap_content"
+        style="@style/BlackText"
+        android:layout_below="@id/text_realname"
+        android:layout_marginStart="20dp"
+        android:text="@string/myclasses"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_realname"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:id="@+id/username"
+        style="@style/BlackText"
+        android:text="xxx"
+        android:layout_width="200dp"
+        app:layout_constraintStart_toEndOf="@id/text_username"
+        app:layout_constraintTop_toTopOf="@id/text_username"/>
+    <TextView
+        android:id="@+id/realname"
+        style="@style/BlackText"
+        android:text="xxx"
+        android:layout_width="200dp"
+        app:layout_constraintStart_toEndOf="@id/text_realname"
+        app:layout_constraintTop_toTopOf="@id/text_realname"/>
+    <GridView
+        android:id="@+id/myclasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:verticalSpacing="20dp"
+        app:layout_constraintTop_toBottomOf="@id/text_myclasses"
+        />
+
+</android.support.constraint.ConstraintLayout>

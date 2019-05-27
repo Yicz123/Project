@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.facedemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.yi.myproject.MyProject">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="Student.Student" />
+        <activity android:name="Student.Student_Info" />
+        <activity android:name="Student.Password_change" />
+        <activity android:name="Teacher.Teacher" />
+        <activity android:name="Teacher.CheckinPage" />
+        <activity android:name="Teacher.Teacher_Info" />
+        <activity android:name="Teacher.Password_change" />
+        <activity android:name="Teacher.Check_result" />
+        <activity android:name="Student.uploadImage" />
+        <activity android:name="Teacher.courseRecord" />
+        <activity android:name="Teacher.Recorddetailed" />
+        <activity android:name="com.example.yi.myproject.ExitApplication"/>
+        <activity android:name="Teacher.allrecord" android:theme="@style/MyDialogStyleBottom"/>
+        <activity android:name="Student.Record"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/background_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_and"
+        android:contentDescription="@string/background_mian"
+        android:scaleType="matrix"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/gotoCheckInPage"
+        android:background="#00000000"
+        android:textColor="#336633"
+        android:text="@string/gotoCheckInPage"
+        style="@style/MenuButon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"/>
+    <Button
+        android:id="@+id/lookforMyInfo"
+        android:background="#00000000"
+        android:textColor="#336633"
+        android:text="@string/lookforMyInfo"
+        style="@style/MenuButon"
+        app:layout_constraintStart_toStartOf="@id/gotoCheckInPage"
+        app:layout_constraintTop_toTopOf="@id/gotoCheckInPage"
+        android:layout_marginTop="80dp"/>
+    <Button
+        android:id="@+id/changePassword"
+        android:background="#00000000"
+        android:text="@string/changePassword"
+        android:textColor="#336633"
+        style="@style/MenuButon"
+        app:layout_constraintStart_toStartOf="@id/lookforMyInfo"
+        app:layout_constraintTop_toTopOf="@id/lookforMyInfo"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/abort"
+        android:background="#00000000"
+        android:textColor="#336633"
+        style="@style/MenuButon"
+        android:text="退出登录"
+        app:layout_constraintStart_toStartOf="@id/changePassword"
+        app:layout_constraintTop_toTopOf="@id/changePassword"
+        android:layout_marginTop="80dp" />
+
+    <!--<Button
+        android:id="@+id/History_record"
+        android:textColor="@color/blue"
+        android:background="#00000000"
+        style="@style/MenuButon"
+        android:text="历史考勤信息"
+        app:layout_constraintStart_toStartOf="@id/gotoCheckInPage"
+        app:layout_constraintTop_toTopOf="@id/gotoCheckInPage"
+        android:layout_marginTop="80dp" />-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/abort"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="168dp" />
+
+</android.support.constraint.ConstraintLayout>

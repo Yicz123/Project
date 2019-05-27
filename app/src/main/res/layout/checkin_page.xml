@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_and"
+        android:contentDescription="@string/background_mian"
+        android:scaleType="matrix"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:id="@+id/chooseClass"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/chooseClass"
+        android:spinnerMode="dropdown"
+        />
+
+    <Button
+        android:id="@+id/choosePicture"
+        style="@style/MenuButon"
+        android:background="#00000000"
+        android:text="@string/choosePicture"
+        app:layout_constraintTop_toBottomOf="@id/chooseClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+    <Button
+        android:id="@+id/startCheckIn"
+        style="@style/MenuButon"
+        android:background="#00000000"
+        android:text="@string/startCheckin"
+        app:layout_constraintTop_toBottomOf="@id/choosePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/startCheckIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        />
+    <Button
+        android:id="@+id/getresult"
+        style="@style/MenuButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/startCheckIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        android:text="查看详情"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        tools:ignore="VectorDrawableCompat"
+        android:visibility="invisible"/>
+
+</android.support.constraint.ConstraintLayout>

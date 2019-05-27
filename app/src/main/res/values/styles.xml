@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/lightgreen</item>
+    </style>
+
+    <!--textview style -->
+    <style name="WhiteText">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name ="android:textColor" >@color/white</item>
+        <item name ="android:gravity">bottom</item>
+        <item name ="android:textSize">20sp</item>
+        <item name ="android:ems">5</item>
+        <item name ="android:fontFamily">@font/test</item>
+    </style>
+
+    <style name="BlackText">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name ="android:textColor" >@color/black</item>
+        <item name ="android:gravity">bottom</item>
+        <item name ="android:textSize">20sp</item>
+        <item name ="android:ems">5</item>
+        <item name ="android:fontFamily">@font/test</item>
+    </style>
+    <!--edittext style-->
+    <style name="EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:typeface">monospace</item>
+        <item name ="android:textColor" >@android:color/white</item>
+        <item name ="android:textSize">20sp</item>
+        <item name ="android:ems">20</item>
+        <item name ="android:fontFamily">@font/test</item>
+    </style>
+    <!--radiobutton style-->
+    <style name="RadioButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">165dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name ="android:fontFamily">@font/test</item>
+    </style>
+    <!--button style-->
+    <style name = "SingleButton">
+        <item name="android:fontFamily">@font/test</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="anim_pop_bottombar">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+    <!-- for excel-->
+    <style name="ForExcel">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name ="android:textColor" >@android:color/white</item>
+        <item name ="android:gravity">center</item>
+        <item name ="android:textSize">20sp</item>
+        <item name ="android:fontFamily">@font/test</item>
+        <item name="android:background">@drawable/textview_border</item>
+    </style>
+    <style name="MenuButon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">150dp</item>
+        <item name ="android:textSize">20sp</item>
+        <item name ="android:fontFamily">@font/test</item>
+        <item name ="android:gravity">center</item>
+
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        ;!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        ;!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        ;!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        ;!-- 无标题 -->
+        <item name="android:windowBackground">@color/white</item>
+        ;!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        ;!-- 模糊 -->
+    </style>
+
+
+
+</resources>

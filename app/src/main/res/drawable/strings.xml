@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">无感知签到系统</string>
+    <string name="background">Background</string>
+    <string name="background_mian">MainBackgroind</string>
+    <string name="username">账号: </string>
+    <string name="password">密码: </string>
+    <string name="PlInUsr">请输入账号</string>
+    <string name="PlInPsd">请输入密码</string>
+    <string name="PlInOldPsd">请输入原密码</string>
+    <string name="PlInNewPsd">请输入新密码</string>
+    <string name="student">学生</string>
+    <string name="teacher">老师</string>
+    <string name="buttonlogin">登录</string>string>
+    <string name="oldpassword">旧密码</string>
+    <string name="newpassword">新密码</string>
+    <string name="confirmpsd">确认新密码</string>
+    <string name="confirchange">确认修改</string>
+    <string name="realname">姓名：</string>
+    <string name="myclasses">我的课程</string>
+    <string name="chooseClass">选择课程</string>
+    <string name="choosePicture">选择考勤图片</string>
+    <string name="startCheckin">开始考勤</string>
+    <string name="shouleBe">应到：</string>
+    <string name="actualBe">实到：</string>
+    <string name="didntBe">未到：</string>
+    <string name="percent">到课率：</string>
+    <string name="unbeList">未到名单：</string>
+    <string name="confirm">确认</string>
+    <string name="classesList">课程列表</string>
+    <string name="gotoCheckInPage">进入考勤界面</string>
+    <string name="lookforMyInfo">查看我的信息</string>
+    <string name="changePassword">修改密码</string>
+    <string name="url"> 219.219.220.172</string>
+    219.219.220.172
+</resources>

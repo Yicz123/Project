@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_and"
+        android:contentDescription="@string/background_mian"
+        android:scaleType="matrix"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/coursename"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/shouldbe"
+        style="@style/BlackText"
+        android:text="@string/shouleBe"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="66dp" />
+
+    <TextView
+        android:id="@+id/actualbe"
+        style="@style/BlackText"
+        android:text="@string/actualBe"
+        app:layout_constraintStart_toEndOf="@id/re_shouldbe"
+        app:layout_constraintTop_toTopOf="@id/shouldbe" />
+    <TextView
+        android:id="@+id/didntBe"
+        style="@style/BlackText"
+        app:layout_constraintStart_toStartOf="@id/shouldbe"
+        app:layout_constraintTop_toBottomOf="@id/actualbe"
+        android:text="@string/didntBe"/>
+    <TextView
+        android:id="@+id/percent"
+        style="@style/BlackText"
+        app:layout_constraintStart_toEndOf="@id/re_didntbe"
+        app:layout_constraintTop_toTopOf="@id/didntBe"
+        android:text="@string/percent"/>
+    <TextView
+        android:id="@+id/unbeList"
+        style="@style/BlackText"
+        app:layout_constraintStart_toStartOf="@id/shouldbe"
+        app:layout_constraintTop_toBottomOf="@id/percent"
+        android:text="@string/unbeList"
+        android:layout_marginTop="0dp"
+        android:textSize="17sp"/>
+    <!--以下显示实际人数-->
+    <TextView
+        android:id="@+id/re_shouldbe"
+        style="@style/BlackText"
+        android:layout_width="50dp"
+        app:layout_constraintTop_toTopOf="@id/shouldbe"
+        app:layout_constraintStart_toEndOf="@id/shouldbe"
+        android:text="x人"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/re_actualbe"
+        style="@style/BlackText"
+        android:text="x人"
+        app:layout_constraintTop_toTopOf="@id/actualbe"
+        app:layout_constraintStart_toEndOf="@id/actualbe"
+        android:layout_width="150dp"
+        />
+    <TextView
+        android:id="@+id/re_didntbe"
+        style="@style/BlackText"
+        android:text="x人"
+        app:layout_constraintTop_toTopOf="@id/didntBe"
+        app:layout_constraintStart_toEndOf="@id/didntBe"
+        android:layout_width="50dp"
+        />
+    <TextView
+        android:id="@+id/re_percent"
+        style="@style/BlackText"
+        android:text="x%"
+        app:layout_constraintTop_toTopOf="@id/percent"
+        app:layout_constraintStart_toEndOf="@id/percent"
+        android:layout_width="150dp"
+        />
+    <GridView
+        android:id="@+id/re_unbeList"
+        style="@style/BlackText"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:text="x人"
+        app:layout_constraintTop_toBottomOf="@id/unbeList"
+        android:layout_marginTop="20dp"
+        android:verticalSpacing="20dp"
+        app:layout_constraintStart_toStartOf="@id/unbeList"
+
+        />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:fontFamily="@font/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue"
+        android:text="确认提交"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/re_unbeList" />
+
+</android.support.constraint.ConstraintLayout>

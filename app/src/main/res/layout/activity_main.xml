@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    >
+
+    <ImageView
+        android:id="@+id/background_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/background_main"
+        android:scaleType="matrix"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/practiceName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="无感知人脸识别系统"
+        android:fontFamily="@font/test"
+        android:textColor="@color/yello"
+        android:layout_above="@id/NameText"
+        />
+    <EditText
+        android:id="@+id/NameText"
+        style="@style/BlackText"
+        android:hint="请输入账号"
+        android:background="@drawable/edit_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/PasswordText"
+        style="@style/BlackText"
+        android:hint="请输入密码"
+        android:background="@drawable/edit_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/NameText"
+        android:layout_below="@+id/NameText"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:layout_alignLeft="@+id/NameText" />
+
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PasswordText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师"
+            android:fontFamily="@font/test"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:id="@+id/Student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/test"
+            android:text="学生" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/Login"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="登录"
+        android:fontFamily="@font/test"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginBottom="65dp" />
+
+</RelativeLayout>
